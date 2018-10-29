@@ -1,4 +1,4 @@
-from marketorestpython.client import MarketoClient
+from marketorestclientpython.client import MarketoClient
 '''
 munchkin_id = "" ### Enter Munchkin ID
 client_id = "" ### enter client ID (find in Admin > LaunchPoint > view details)

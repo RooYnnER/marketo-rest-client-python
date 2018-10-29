@@ -23,13 +23,12 @@ Originally developed by asamat with contributions from sandipsinha and osamakhn
 '''
 
 setup(
-    name='marketorestpython',
-    version= '0.3.16',
-    url='https://github.com/jepcastelein/marketo-rest-python',
-    author='Jep Castelein',
-    author_email='jep@castelein.net',
-    packages=['marketorestpython', 'marketorestpython.helper'],
-    license='MIT License',
+    name='marketorestclientpython',
+    version= '0.3',
+    url='https://github.com/RooYnnER/marketo-rest-client-python',
+    author='BackendTeam',
+    author_email='back@team.com',
+    packages=['marketorestclientpython', 'marketorestclientpython.helper'],
     install_requires=[
         'requests',
     ],

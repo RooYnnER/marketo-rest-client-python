@@ -3,7 +3,7 @@ import pytest
 
 from mock import patch, Mock
 
-from marketorestpython.client import MarketoClient
+from marketorestclientpython.client import MarketoClient
 
 
 @pytest.fixture
@@ -22,7 +22,7 @@ def test_marketo_client(client):
     assert client.API_LIMIT == 20
 
 
-@patch('marketorestpython.client.HttpLib')
+@patch('marketorestclientpython.client.HttpLib')
 def test_api_call(m_http_lib, client):
     get_request_mock = Mock(return_value={
         'access_token': '1234', 'expires_in': 1000, 'scope': '1'
@@ -46,7 +46,7 @@ def test_api_call(m_http_lib, client):
         }
 
 
-@patch('marketorestpython.client.MarketoClient._api_call')
+@patch('marketorestclientpython.client.MarketoClient._api_call')
 def test_authenticate(m_client_api_call, client):
     m_client_api_call.return_value = None
     with pytest.raises(Exception):

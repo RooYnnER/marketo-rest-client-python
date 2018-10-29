@@ -10,7 +10,7 @@ Full Marketo REST API documentation - http://developers.marketo.com/documentatio
 Installation
 ============
 
-`pip install marketorestpython`
+`pip install marketorestclientpython`
 
 Unit tests
 ==========
@@ -24,7 +24,7 @@ py.test tests/
 Usage
 =====
 ```python
-from marketorestpython.client import MarketoClient
+from marketorestclientpython.client import MarketoClient
 munchkin_id = "" # fill in Munchkin ID, typical format 000-AAA-000
 client_id = "" # enter Client ID from Admin > LaunchPoint > View Details
 client_secret= "" # enter Client ID and Secret from Admin > LaunchPoint > View Details
